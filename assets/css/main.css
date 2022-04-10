@@ -453,12 +453,15 @@ a {
 }
 
 .project-technologies {
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 20px 0;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+  width: 100%;
+  justify-content : center;
 }
 
 .project-technology {

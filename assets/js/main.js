@@ -26,30 +26,31 @@ function blog_posts() {
             url: 'https://blog.naver.com/redlion0929',
             title: 'Naver Blog',
         },
-        
+        {
+            url: 'https://www.nagekar.com/2017/08/privacy.html',
+            title: 'Privacy - How I Converted',
+        },
     ];
 
     let post_html = [];
 
-    for(let post of posts) {
+    // for the more posts link
+    let post_template = `
+    <div class="blog-post" onclick="blog_link_click('https://blog.naver.com/redlion0929');">
 
-        let post_template = `
-        <div class="blog-post" onclick="blog_link_click('${post.url}');">
+        <div class="blog-link">
 
-            <div class="blog-link">
-    
-                <h3><a href="${post.url}">${post.title}</a></h3>            
+            <h3><a href="https://blog.naver.com/redlion0929">Naver Blog</a></h3>            
 
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
-            </div>
         </div>
-        `;
 
-        post_html.push(post_template); 
-    }
+        <div class="blog-goto-link">
+            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+        </div>
+    </div>
+    `;
+
+    post_html.push(post_template);
 
     $('#rss-feeds').html(post_html);
 

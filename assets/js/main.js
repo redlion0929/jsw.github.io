@@ -33,14 +33,6 @@ function blog_posts() {
 
     for(let post of posts) {
 
-        let tags;
-        
-        if(post.tags) {
-            tags = post.tags.map(tag => {
-                return `<a href="https://www.nagekar.com/tags#${tag}">${tag}</a>`
-            })
-        }
-
         let post_template = `
         <div class="blog-post" onclick="blog_link_click('${post.url}');">
 
@@ -61,7 +53,7 @@ function blog_posts() {
 
     // for the more posts link
     let post_template = `
-    <div class="blog-post" onclick="blog_link_click('https://blog.naver.com/redlion0929');">
+    <div class="blog-post more-blogs" onclick="blog_link_click('https://blog.naver.com/redlion0929');">
 
         <div class="blog-link">
 

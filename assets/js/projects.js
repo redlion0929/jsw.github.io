@@ -43,7 +43,7 @@ let render_projects = (slug) => {
             title: 'DQACR',
             demo: false,
             technologies: ['Python'],
-            description: "I implemented dialogue-based multiple choice QA LM which has improved commonsense reasoning using Semantic Search and Semantic Search.",
+            description: "I implemented dialogue-based multiple choice QA LM which has improved commonsense reasoning using Semantic Search and Continual Learning.",
             categories: ['native']
         },
         {

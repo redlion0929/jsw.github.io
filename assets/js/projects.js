@@ -15,8 +15,8 @@ let render_projects = (slug) => {
             link: 'https://github.com/redlion0929/KorDPR_NLP',
             title: 'KorDPR',
             demo: false,
-            technologies: ['Flask', 'Celery', 'Python'],
-            description: "Flask web application for easy reporting updates to one's mentor. Multi-user support, easy to deploy and use.",
+            technologies: ['Python'],
+            description: "I implemented \"Dense Passage Retrieval for Open-Domain Question Answering\" which is state-of-the-art Retrieval Model using Korean dataset.",
             categories: ['native']
         },
         {
@@ -24,35 +24,35 @@ let render_projects = (slug) => {
             link: 'https://github.com/redlion0929/KorKeyBLD_NLP',
             title: 'KorKeyBLD',
             demo: false,
-            technologies: ['Semantic UI', 'Jekyll'],
-            description: "A modern Jekyll theme with grid frontpage, beautiful typography, mobile responsive, made with Semantic UI.",
-            categories: ['featured', 'webdev']
+            technologies: ['Python'],
+            description: "I implemented \"KeyBLD: Selecting Key Blocks with Local Pre-ranking for Long Document Information Retrieval\" which is effective Retrieval Model using Korean dataset.",
+            categories: ['native']
         },
         {
             image: 'assets/images/collage.jpg',
             link: 'https://github.com/redlion0929/KorSimCSE_NLP',
             title: 'KorSimCSE',
             demo: false,
-            technologies: ['Android', 'OpenCV'],
-            description: "Attendance marking tool that uses face recognition for marking attendance and firebase for tracking and analytics.",
-            categories: ['featured', 'native']
+            technologies: ['Python'],
+            description: "I fine-tuned \"SimCSE: Simple Contrastive Learning of Sentence Embeddings\" which is state-of-the-art sentence embedding model using Korean dataset and make a simple demo.",
+            categories: ['native']
         },
         {
             image: 'assets/images/mpw.jpg',
             link: 'https://github.com/redlion0929/DQACR',
             title: 'DQACR',
             demo: false,
-            technologies: ['Semantic UI', 'CSS3'],
-            description: "Master Password is an ingenious password solution that makes your passwords truly impossible to lose.",
-            categories: ['featured', 'security']
+            technologies: ['Python'],
+            description: "I implemented dialogue-based multiple choice QA LM which has improved commonsense reasoning using Semantic Search and Semantic Search.",
+            categories: ['native']
         },
         {
             image: 'assets/images/social-share-count.jpeg',
             link: 'https://github.com/redlion0929/ParkingSuwon---2020-summer',
             title: 'Parking Suwon',
             demo: false,
-            technologies: ['Python'],
-            description: "Ever wondered how many times a URL has been shared on popular social networks?",
+            technologies: ['Html, CSS, JavaScript'],
+            description: "A website that shows information about parking lots in Suwon.",
             categories: ['webdev']
         },
         {

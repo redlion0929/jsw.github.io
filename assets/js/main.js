@@ -20,25 +20,36 @@ function general_utils() {
 
 function blog_posts() {
 
+    // keeping it static, can be fetched from a blog dynamically as well
+    let posts = [
+        {
+            url: 'https://blog.naver.com/redlion0929',
+            title: 'Naver Blog',
+        },
+        
+    ];
+
     let post_html = [];
 
-    // for the more posts link
-    let post_template = `
-    <div class="blog-post" onclick="blog_link_click('https://blog.naver.com/redlion0929');">
+    for(let post of posts) {
 
-        <div class="blog-link">
+        let post_template = `
+        <div class="blog-post" onclick="blog_link_click('${post.url}');">
 
-            <h3><a href="https://blog.naver.com/redlion0929">Naver Blog</a></h3>            
+            <div class="blog-link">
+    
+                <h3><a href="${post.url}">${post.title}</a></h3>            
 
+            </div>
+    
+            <div class="blog-goto-link">
+                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+            </div>
         </div>
+        `;
 
-        <div class="blog-goto-link">
-            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
-        </div>
-    </div>
-    `;
-
-    post_html.push(post_template);
+        post_html.push(post_template);
+    }
 
     $('#rss-feeds').html(post_html);
 

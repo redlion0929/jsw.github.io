@@ -26,19 +26,12 @@ function blog_posts() {
             url: 'https://blog.naver.com/redlion0929',
             title: 'Naver Blog',
         },
+        
     ];
 
     let post_html = [];
 
     for(let post of posts) {
-
-        let tags;
-        
-        if(post.tags) {
-            tags = post.tags.map(tag => {
-                return `<a href="https://www.nagekar.com/tags#${tag}">${tag}</a>`
-            })
-        }
 
         let post_template = `
         <div class="blog-post" onclick="blog_link_click('${post.url}');">
@@ -57,9 +50,6 @@ function blog_posts() {
 
         post_html.push(post_template);
     }
-
-
-    post_html.push(post_template);
 
     $('#rss-feeds').html(post_html);
 

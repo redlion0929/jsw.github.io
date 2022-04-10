@@ -31,29 +31,9 @@ function blog_posts() {
 
     let post_html = [];
 
-    for(let post of posts) {
-
-        let post_template = `
-        <div class="blog-post" onclick="blog_link_click('${post.url}');">
-
-            <div class="blog-link">
-    
-                <h3><a href="${post.url}">${post.title}</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
-            </div>
-        </div>
-        `;
-
-        post_html.push(post_template);
-    }
-
     // for the more posts link
     let post_template = `
-    <div class="blog-post more-blogs" onclick="blog_link_click('https://blog.naver.com/redlion0929');">
+    <div class="blog-post" onclick="blog_link_click('https://blog.naver.com/redlion0929');">
 
         <div class="blog-link">
 

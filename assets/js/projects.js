@@ -11,7 +11,7 @@ let render_projects = (slug) => {
 
     let projects_obj = [
         {
-            image: 'assets/images/mentors.jpg',
+            image: 'assets/images/mentors.jpeg',
             link: 'https://github.com/redlion0929/KorDPR_NLP',
             title: 'KorDPR',
             demo: false,
@@ -20,7 +20,7 @@ let render_projects = (slug) => {
             categories: ['native']
         },
         {
-            image: 'assets/images/mobile-landscape.jpg',
+            image: 'assets/images/mobile-landscape.jpeg',
             link: 'https://github.com/redlion0929/KorKeyBLD_NLP',
             title: 'KorKeyBLD',
             demo: false,
@@ -29,7 +29,7 @@ let render_projects = (slug) => {
             categories: ['native']
         },
         {
-            image: 'assets/images/collage.jpg',
+            image: 'assets/images/collage.jpeg',
             link: 'https://github.com/redlion0929/KorSimCSE_NLP',
             title: 'KorSimCSE',
             demo: false,
@@ -38,7 +38,7 @@ let render_projects = (slug) => {
             categories: ['native']
         },
         {
-            image: 'assets/images/mpw.jpg',
+            image: 'assets/images/mpw.jpeg',
             link: 'https://github.com/redlion0929/DQACR',
             title: 'DQACR',
             demo: false,
@@ -47,22 +47,13 @@ let render_projects = (slug) => {
             categories: ['native']
         },
         {
-            image: 'assets/images/social-share-count.jpeg',
+            image: 'assets/images/social-share-count.png',
             link: 'https://github.com/redlion0929/ParkingSuwon---2020-summer',
             title: 'Parking Suwon',
             demo: false,
             technologies: ['Html, CSS, JavaScript'],
             description: "A website that shows information about parking lots in Suwon.",
             categories: ['webdev']
-        },
-        {
-            image: 'assets/images/data-destroyer.png',
-            link: 'https://github.com/abhn/data-destroyer-gui',
-            title: 'Data Destroyer',
-            demo: false,
-            technologies: ['C++', 'Qt'],
-            description: "Native GUI wrapper for GNU coreutils tool 'dd'",
-            categories: ['native']
         },
         
     ]
